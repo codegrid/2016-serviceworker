@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "serviceworker-sandbox",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ykhs/serviceworker-sandbox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ykhs/serviceworker-sandbox/issues"
+  },
+  "homepage": "https://github.com/ykhs/serviceworker-sandbox#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "2.17.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
