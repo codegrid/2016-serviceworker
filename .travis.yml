@@ -10,7 +10,7 @@ after_success:
                               --iv "$encrypted_102af6f1c923_iv" \
                               --path-encrypted-key ".travis/github_deploy_key.enc"
 
-        $(npm bin)/update-branch --command : \
+        $(npm bin)/update-branch --commands ":" \
                                  --commit-message "Update website [skip ci]" \
                                  --directory "./example" \
                                  --distribution-branch "gh-pages" \
