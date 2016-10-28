@@ -1,7 +1,9 @@
 const name = '[Worker]';
-const cacheName = 'v1';
+const cacheName = 'cache-v1';
 const urlsToCache = [
-  '/4-install-and-cache'
+  './',
+  './index.html',
+  './app.js'
 ];
 
 self.addEventListener('install', (event) => {
@@ -14,19 +16,6 @@ self.addEventListener('install', (event) => {
       })
       .then(() => {
         console.log('%s ファイルのキャッシュが完了しました。', name);
-      })
-  );
-});
-
-self.addEventListener('fetch', (event) => {
-  console.log('%s Service Workerのfetchイベントが発生しました。', name, event);
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
       })
   );
 });

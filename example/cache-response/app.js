@@ -14,9 +14,9 @@ if ('serviceWorker' in navigator) {
     })
     .then(registration => {
       const serviceWorker = registration.active;
-      console.info('%s Service Workerは [%s] 状態です。', name, serviceWorker.state);
+      console.log('%s Service Workerは [%s] 状態です。', name, serviceWorker.state);
       serviceWorker.addEventListener('statechange', (event) => {
-        console.info('%s Service Workerが [%s] 状態になりました。', name, event.target.state);
+        console.log('%s Service Workerが [%s] 状態になりました。', name, event.target.state);
       });
     })
     .catch(error => {
