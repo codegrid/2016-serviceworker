@@ -1,9 +1,10 @@
 const name = '[Worker]';
 const cacheName = 'v1';
 const urlsToCache = [
-  '/4-install-and-cache/',
-  '/4-install-and-cache/app.js',
-  '/4-install-and-cache/logo-cache.svg'
+  './',
+  './index.html',
+  './app.js',
+  './logo-cache.svg'
 ];
 
 self.addEventListener('install', (event) => {
