@@ -3,9 +3,11 @@
   "dependencies": {},
   "devDependencies": {
     "@alrra/travis-scripts": "3.0.1",
-    "http-server": "0.9.0"
+    "http-server": "0.9.0",
+    "sw-precache": "4.2.2"
   },
   "scripts": {
+    "precache": "sw-precache --root=./example/sw-precache --static-file-globs='./example/sw-precache/*.{js,html,svg}'",
     "start": "http-server ./example -c-1 -p 3000"
   }
 }
