@@ -1,5 +1,5 @@
 const name = '[Worker]';
-const cacheName = 'cache-response-update-v1';
+const cacheName = 'update-cache-response-v1';
 const currentCacheNames = [
   cacheName
 ];
